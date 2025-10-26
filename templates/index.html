@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KwizyVert</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/iconoir@latest/css/iconoir.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+  <!-- CSS file -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="nav">
+    <div class="logo">
+      <span class="k">K</span>
+      <span id="logo">KWYZE</span>
+    </div>
+
+    <div class="login">
+      <span id="signup">Signup</span>
+      <span id="login">Login</span>
+    </div>
+
+    <div class="labels">
+      <span class="label selected" onclick="Main()">Main</span>
+      <span class="label" onclick="Flashcards()">Flashcards</span>
+      <span class="label" onclick="PDFs_Summaries()">PDF's Summaries</span>
+      <span class="label" onclick="References()">Resources</span>
+      <span class="label" onclick="Archieve()">Archieve</span>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="body" id="container">
+    <div class="intro">
+      <div class="cercle">
+        <i class="iconoir-brain" id="brain"></i>
+        <div class="h1">
+          <h1>Learn anything.</h1>
+          <h1>Fast.</h1>
+          <button id="startLearning">Start Learning</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="suggest">
+      <div class="flashcards" onclick="Flashcards()">Flashcards</div>
+      <div class="pdfs">PDFs & Summaries</div>
+      <div class="exams">Start Exams</div>
+    </div>
+  </div>
+
+  <!-- JS file -->
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
