@@ -1,4 +1,4 @@
- const labels = document.querySelectorAll('.label')
+        const labels = document.querySelectorAll('.label')
         const flashcards =document.getElementById("flashcards")
         const container = document.getElementById("container")
 
@@ -15,15 +15,15 @@
             container.innerHTML = `
         <div class="folder" id="recherche-operationnel" name="recherche-operationnel" data-classe="RO">
             <i class="fa-solid fa-folder"></i>
-            <span class="foldername">Recherche operationnel</span>
+            <span class="foldername">RO</span>
         </div>
         <div class="folder" id="machine-learning" name="machine-learning" data-classe="ML">
             <i class="fa-solid fa-folder"></i>
-            <span class="foldername">Machine learning</span>
+            <span class="foldername">ML</span>
         </div>
         <div class="folder" id="gestion-des-enterprises" name="gestion-des-enterprises" data-classe="GE">
             <i class="fa-solid fa-folder"></i>
-            <span class="foldername">Gestion des enterprises</span>
+            <span class="foldername">GE</span>
         </div>
         <div class="folder" id="securite" name="securite" data-classe="SEC">
             <i class="fa-solid fa-folder"></i>
@@ -31,7 +31,7 @@
         </div>
         <div class="folder" id="admin-system-reseaux" name="admin-system-reseaux" data-classe="ASR">
             <i class="fa-solid fa-folder"></i>
-            <span class="foldername">Admin system & reseaux</span>
+            <span class="foldername">Admin sys&rss</span>
         </div>
         <div class="folder" id="reseau-mobile" name="reseau-mobile" data-classe="RM">
             <i class="fa-solid fa-folder"></i>
@@ -128,7 +128,7 @@
             </div>
             <div class="pdf" name="Admin-System-Reseaux">
                 <i class="fa-solid fa-file-pdf"></i>
-                <span class="resumename">Admin Syst&Reseaux</span>
+                <span class="resumename">Admin Sys&Rss</span>
                 <button class="download-btn" id="download">
                     <i class="fa-solid fa-download"></i> Download
                 </button>
@@ -186,10 +186,22 @@
             `
         }
         function References(){
-            container.style.display = "flex"
-            container.innerHTML = `<span style='color:gray;'>will be add soon :)</span>`
+            container.innerHTML = `<span style='color:gray;' id='alert'>will be add soon :)</span>`
         }
         function Archieve(){
-            container.style.display = "flex"
             container.innerHTML = `<span id='arch'><a href='https://archives-supnum.free.nf'>Go to SupNum Archive</a></span>`
         }
+
+
+
+        const navbar = document.getElementById("nav")
+        const navbtn = document.getElementById("navbar")
+
+        function showNav(){
+            navbar.style.left = "0"
+        }
+
+        function closeNav(){
+            navbar.style.left = "-30vh"
+        }
+        Main()

@@ -14,45 +14,35 @@
 </head>
 <body>
   <!-- Navbar -->
-  <div class="nav">
-    <div class="logo">
-      <span class="k">K</span>
-      <span id="logo">KWYZE</span>
-    </div>
-
-    <div class="login">
-      <span id="signup">Signup</span>
-      <span id="login">Login</span>
-    </div>
-
-    <div class="labels">
-      <span class="label selected" onclick="Main()">Main</span>
-      <span class="label" onclick="Flashcards()">Flashcards</span>
-      <span class="label" onclick="PDFs_Summaries()">PDF's Summaries</span>
-      <span class="label" onclick="References()">Resources</span>
-      <span class="label" onclick="Archieve()">Archieve</span>
-    </div>
-  </div>
-
-  <!-- Main content -->
-  <div class="body" id="container">
-    <div class="intro">
-      <div class="cercle">
-        <i class="iconoir-brain" id="brain"></i>
-        <div class="h1">
-          <h1>Learn anything.</h1>
-          <h1>Fast.</h1>
-          <button id="startLearning">Start Learning</button>
+    <header>
+        <i class="fa-solid fa-bars" id="navbar" onclick="showNav()"></i>
+        <div class="Logo">
+            <span class="k">K</span>
+            <span id="Logo">KWYZE</span>
         </div>
-      </div>
+    </header>
+    <div class="nav" id="nav">
+            <i id="close" class="fa-solid fa-xmark" onclick="closeNav()"></i>
+        <div class="logo">
+            <span class="k">K</span>
+            <span id="logo">KWYZE</span>
+        </div>
+        <div class="login">
+            <span id="signup">Signup</span>
+            <span id="login">Login</span>
+        </div>
+        <div class="labels">
+            <span class="label selected" onclick="Main()">Main</span>
+            <span class="label" id="flashcards" onclick="Flashcards()">Flashcards</span>
+            <span class="label" id="summaries" onclick="PDFs_Summaries()">PDF's Summaries</span>
+            <span class="label" onclick="References()">Resources</span>
+            <span class="label" onclick="Archieve()">Archieve</span>
+        </div>
+    </div>
+    <div class="body" id="container">
+
     </div>
 
-    <div class="suggest">
-      <div class="flashcards" onclick="Flashcards()">Flashcards</div>
-      <div class="pdfs">PDFs & Summaries</div>
-      <div class="exams">Start Exams</div>
-    </div>
-  </div>
 
   <!-- JS file -->
   <script src="{{ url_for('static', filename='js/script.js') }}"></script>
