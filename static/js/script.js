@@ -186,9 +186,11 @@
             `
         }
         function References(){
+            container.style.display = "flex";
             container.innerHTML = `<span style='color:gray;' id='alert'>will be add soon :)</span>`
         }
         function Archieve(){
+            container.style.display = "flex";
             container.innerHTML = `<span id='arch'><a href='https://archives-supnum.free.nf'>Go to SupNum Archive</a></span>`
         }
 
