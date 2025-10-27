@@ -5,7 +5,12 @@
             font-family: 'Inter', sans-serif;
             color: white;
         }
-
+       #arch{
+              align-self:center;
+              margin:auto;
+              text-align:center;
+              justify-self:center;
+       }
         body {
             display: flex;
             height: 100vh;
